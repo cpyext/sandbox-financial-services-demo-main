@@ -250,12 +250,12 @@ const Location: Template<TemplateRenderProps> = ({ document }) => {
         <hr className="my-4" />
       )}
 
-      {/* <article className="centered-container !py-4 hidden md:block"> */}
-        {/* <BreadCrumbs */}
-          {/* data={dm_directoryParents_fins_directory} */}
-          {/* currAddress={address.line1} */}
-        {/* /> */}
-      {/* </article> */}
+      <article className="centered-container !py-4 hidden md:block">
+        <BreadCrumbs
+          data={dm_directoryParents_fins_directory}
+          currAddress={address.line1}
+        />
+      </article>
       {/* Hero Section */}
       <section className="centered-container flex flex-col md:h-[400px] md:flex-row md:justify-between gap-4 md:gap-0">
         <article className="flex flex-col w-full md:w-1/2 gap-3 md:gap-4">
@@ -516,10 +516,10 @@ const Location: Template<TemplateRenderProps> = ({ document }) => {
         />
       )}
       <article className="centered-container !py-8 block md:hidden border-t">
-        {/* <BreadCrumbs */}
-          {/* data={dm_directoryParents_fins_directory} */}
-          {/* currAddress={address.line1} */}
-        {/* /> */}
+        <BreadCrumbs
+          data={dm_directoryParents_fins_directory}
+          currAddress={address.line1}
+        />
       </article>
       <ScrollToTop />
     </PageLayout>
